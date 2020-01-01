@@ -46,4 +46,27 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="doze_elements"
+        android:title="@string/doze_elements_title" >
+
+         <com.komodo.settings.preferences.SystemSettingSwitchPreference
+            android:key="ambient_battery_percent"
+            android:title="@string/ambient_battery_percent_title"
+            android:summary="@string/ambient_battery_percent_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="ambient_music_ticker"
+        android:title="@string/music_ticker" >
+
+        <com.komodo.settings.preferences.SystemSettingSwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:defaultValue="true"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary" />
+
+     </PreferenceCategory>
+
 </PreferenceScreen>
